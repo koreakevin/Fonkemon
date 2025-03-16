@@ -19,6 +19,10 @@ public class Fonkemon {
         int maxSelect = nums.length / 2;
         System.out.println("선택할 수 있는 폰켓몬의 수: " + maxSelect);
         
+        // 실제 선택 할수 있는 최대 종류의 계수 계산
+        int result = Math.min(uniqueMons.size(), maxSelect);
+        System.out.println("선택할 수 잇는 최대 종류의 폰켓몬 개수: " + result);
+        
         return uniqueMons.size(); // 반환값 변경
     }
 
