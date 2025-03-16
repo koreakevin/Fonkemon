@@ -3,16 +3,8 @@ package programmers_fonkemon;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Fonkemon {
-	// 실행 테스트를 위해서 필요한 부분
-	/*
-	 * public static void main(String[] args) 
-	 * { Fonkemon sol = new Fonkemon(); //Fonkemon 객체 생성 
-	 * int[] nums = {3, 1, 2, 3}; // 테스트 데이터 
-	 * int result = sol.solution(nums); // solution 메서드 실행 
-	 * System.out.println("결과: " + result); 
-	 * }
-	 */
+class Solution {
+
 	public int solution(int[] nums) {
 		// 중복을 제거하여 폰켓몬의 종류를 구함
 		Set<Integer> uniqueMons = new HashSet<>();
@@ -33,4 +25,14 @@ public class Fonkemon {
 
 		return result; // 반환값 변경
 	}
+}
+
+// 실행 테스트를 위해서 필요한 부분(프로그래머스 정답에는 입력할 필요없음)
+public class Fonkemon {
+	public static void main(String[] args) { 
+		Solution  sol = new Solution(); // Solution 객체 생성 
+		int[] nums = {3, 1, 2, 3}; // 테스트 데이터
+		int result = sol.solution(nums); // solution 메서드 실행 
+		System.out.println("결과: " + result); 
+	 }
 }
