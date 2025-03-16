@@ -14,6 +14,11 @@ public class Fonkemon {
         // 중복 제거 후 폰켓몬 종류 출력
         System.out.println("서로 다른 폰켓몬 종류: " + uniqueMons);
         
+        
+        // 선택할 수 있는 폰켓몬의 수 (N/2) 계산
+        int maxSelect = nums.length / 2;
+        System.out.println("선택할 수 있는 폰켓몬의 수: " + maxSelect);
+        
         return uniqueMons.size(); // 반환값 변경
     }
 
